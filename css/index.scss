@@ -29,7 +29,7 @@ a:hover , a:active{
   float:left;
 }
 .f_r{
-  float: right;
+  float: right !important;
 }
 .f_n{
   float: none;
@@ -75,7 +75,9 @@ ul{
 }
 .border_bottom{
   border-bottom: 1px solid #ffffff4d;
-  
+}
+.bold_border_bottom{
+  border-bottom: 4px solid #AEB756;
 }
 .display_none{
   display: none;
@@ -98,15 +100,77 @@ ul{
     width:50%;
   }
 }
-//***********************************************************************************
-.mobile_menu{
-  display: none;
+.font_12{
+  font-size: 12px;
 }
+.font_14{
+  font-size: 12px;
+}
+.font_18{
+  font-size: 18px;  
+}
+.rotate270{
+  transform: rotate(270deg);
+}
+.rotate180{
+  transform: rotate(180deg);
+}
+.icon_content_width{
+  width: 399px;
+}
+.white_color{
+  color:#fff !important;
+}
+.floating_tab{
+  position: absolute;
+  background: white;
+  top: 58px;
+  overflow: auto;
+  // border: rgba(0,0,0,.1) 1px solid;
+  height: 500px;
+
+}
+//***********************************************************************************
 header{
   ul{
     li{
       a{
         margin-top: 10px;
+      }
+    }
+  }
+}
+.header_icon_content{
+  .icon_content{
+    width: fit-content;
+    li{
+      float: none;
+    }
+    .gas_price{
+      
+      left: 15%;
+      .gas_price_header {
+        float: right;
+      }
+      ul{
+        margin-right: 0;
+      }
+    }
+    .currency_converter{
+      left: 13%;
+    }
+    .prayer_time{
+      left:8%;
+    }
+    .wheather{
+      left: 4%;
+    }
+    .stock{
+      left: 2%;
+      .content_header{
+        div{
+          padding: 0 8%;
+        }
       }
     }
   }
@@ -124,10 +188,9 @@ header{
   }
   .clicked{
     border-bottom: 3px solid #AEB756;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
   }
 }
-
 .text-right{
   ul{
     margin-right: 15%;
@@ -165,6 +228,22 @@ header{
       color:#AEB756;
     }
   }
+  .do_search{
+    position: relative;
+    margin-top: 20px;
+    i{
+      position: absolute;
+      left:10px;
+      bottom: 20px;
+    }
+    input{
+      font-size: 20px;
+      padding: 2%;
+      width: 100%;
+      border: 1px solid rgba(0,0,0,.1);
+      color:#707070;
+    }
+  }
   .divider{
     span{
       display: inline-block;
@@ -172,6 +251,7 @@ header{
       border-left: 1px solid rgba(0,0,0,.125);
     }
   }
+
 }
 
 
@@ -183,26 +263,48 @@ header{
     padding: 0 4%;
   }
   .head{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     padding-top: 4%;
-    .search{
-      margin-bottom: 35px;
-      padding-top: 20px;
-      
+    .menu_button{
+      width: 30px;
+      margin-left: 20px;
+      margin-top: 25px;
+      span{
+        display: block;
+        height: 3px;
+        background: #AEB756;
+        margin: 0 0 6px;
+        -ms-transition: all 0.4s ease-out;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+      }
+    }
+    .opened{
+      span{
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+      }
+      span:first-of-type{
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      span:last-of-type{
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: rotate(45deg) translate(2px, 1px);
+        transform: rotate(45deg) translate(2px, 1px);
+      }
+    }
+    .logo{
+      padding-right: 4%;
     }
   }
   span{
     margin-right: 10px;
-  }
-  .menu_button{
-    a:hover{
-      color:#707070 !important;
-    }
-    text-align: right;
-    padding: 0 4%;
-    i{
-      font-size: 20px;
-    }
   }
   .body{
     background: #ffffffc7;
@@ -240,6 +342,25 @@ header{
         }
       }
     }
+    .search{
+      div{
+        position: relative;
+        text-align: center;
+        i{
+          position: absolute;
+          left: 40px;
+          top: 6px;
+        }
+        input{
+          width: 85%;
+          margin: 0 5%;
+          height: 40px;
+          padding: 2%;
+          border-color: rgba(112, 112, 112, 0.1);
+          border-width: 1px;
+        }
+      }
+    }
   }
 }
 .icon_content{
@@ -272,8 +393,16 @@ header{
     }
   }
 }
+
 .currency_converter{
-  margin: 0 4%;
+  ul{
+    li{
+      margin: 0 4%;
+    }
+  }
+  .content_header{
+    padding: 0;
+  }
   table{
     width: 100%;
   }
@@ -413,9 +542,89 @@ header{
       text-align:left !important;
     }
   }
+  .details{
+    padding: 0 15%;
+    .row_values{
+      .inner_values{
+        font-size: 12px;
+        li{
+          text-align: center;
+        }
+      }
+      .divider{
+        margin-left: 10px;
+        span{
+          display: inline-block;
+          height: 2em;
+          border-left: 1px solid rgba(0,0,0,.125);
+        }
+      }
+    }
+    .line_statistics{
+      .win{
+        width: 45%;
+        li:nth-child(2){
+          background:#AEB756;
+          height: 10px;
+          margin: 6% 0;
+        }
+      }
+      .fixed{
+        width:20%;
+        li:nth-child(2){
+          background:#707070;
+          height: 10px;
+          margin: 14% 0;
+        }
+      }
+      .lose{
+        width:35%; 
+        ul{
+          li{
+            text-align: left;
+          }
+        }
+        li:nth-child(2){
+          background:#E20C0C;
+          height: 10px;
+          margin: 8% 0;
+        }
+      } 
+    }
+    .companies_title{
+      background:#AEB756;
+      color:#fff;
+      font-size: 12px;
+      padding: 2%;
+      margin-top: 4%;
+    }
+    .most_companies_title{
+      margin:15px 0;
+    }
+    .most_catigories{
+      li:not(:last-child){
+        margin-left: 21%;
+      }
+      span{
+        margin: 0;
+      }
+      .clicked{
+        border-bottom: #AEB756 2px solid;
+        padding-bottom: 12px;
+      }
+    }
+    .most_companoes_row{
+      div:not(:last-child){
+        margin-left: 30%;
+      }
+    }
+  }
 }
 .highcharts-legend,.highcharts-title{
   display: none;
+}
+.highcharts-container {
+  height: 400px;
 }
 ///*******************Media Queris**************
 @media (min-width:360px){
@@ -445,6 +654,9 @@ header{
         width: 100%;
       }
     }
+    .icon_content_width{
+      width: 100%;
+    }
 }
 @media(min-width:768px){
   .text-right{
@@ -468,6 +680,9 @@ header{
   .nav_bar{
     li:not(:last-child){
       margin-left: 3%;
+    }
+    .main_list,.more_lsit{
+      transition: 0.3s;
     }
   }
 }

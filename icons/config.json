@@ -465,6 +465,12 @@
       "css": "prev",
       "code": 59414,
       "src": "entypo"
+    },
+    {
+      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
+      "css": "up-arrow",
+      "code": 59419,
+      "src": "fontawesome"
     }
   ]
 }

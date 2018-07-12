@@ -34,7 +34,7 @@
 }
 
 .f_r {
-  float: right;
+  float: right !important;
 }
 
 .f_n {
@@ -97,6 +97,10 @@ ul li {
   border-bottom: 1px solid #ffffff4d;
 }
 
+.bold_border_bottom {
+  border-bottom: 4px solid #AEB756;
+}
+
 .display_none {
   display: none;
 }
@@ -122,12 +126,88 @@ ul li {
   width: 50%;
 }
 
-.mobile_menu {
-  display: none;
+.font_12 {
+  font-size: 12px;
+}
+
+.font_14 {
+  font-size: 12px;
+}
+
+.font_18 {
+  font-size: 18px;
+}
+
+.rotate270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.icon_content_width {
+  width: 399px;
+}
+
+.white_color {
+  color: #fff !important;
+}
+
+.floating_tab {
+  position: absolute;
+  background: white;
+  top: 58px;
+  overflow: auto;
+  height: 500px;
 }
 
 header ul li a {
   margin-top: 10px;
+}
+
+.header_icon_content .icon_content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header_icon_content .icon_content li {
+  float: none;
+}
+
+.header_icon_content .icon_content .gas_price {
+  left: 15%;
+}
+
+.header_icon_content .icon_content .gas_price .gas_price_header {
+  float: right;
+}
+
+.header_icon_content .icon_content .gas_price ul {
+  margin-right: 0;
+}
+
+.header_icon_content .icon_content .currency_converter {
+  left: 13%;
+}
+
+.header_icon_content .icon_content .prayer_time {
+  left: 8%;
+}
+
+.header_icon_content .icon_content .wheather {
+  left: 4%;
+}
+
+.header_icon_content .icon_content .stock {
+  left: 2%;
+}
+
+.header_icon_content .icon_content .stock .content_header div {
+  padding: 0 8%;
 }
 
 .nav_bar nav {
@@ -145,7 +225,7 @@ header ul li a {
 
 .nav_bar .clicked {
   border-bottom: 3px solid #AEB756;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
 }
 
 .text-right ul {
@@ -194,6 +274,25 @@ header ul li a {
   color: #AEB756;
 }
 
+.text-right .do_search {
+  position: relative;
+  margin-top: 20px;
+}
+
+.text-right .do_search i {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+
+.text-right .do_search input {
+  font-size: 20px;
+  padding: 2%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #707070;
+}
+
 .text-right .divider span {
   display: inline-block;
   height: 4em;
@@ -209,30 +308,51 @@ header ul li a {
 }
 
 .mobile_menu .head {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   padding-top: 4%;
 }
 
-.mobile_menu .head .search {
-  margin-bottom: 35px;
-  padding-top: 20px;
+.mobile_menu .head .menu_button {
+  width: 30px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.mobile_menu .head .menu_button span {
+  display: block;
+  height: 3px;
+  background: #AEB756;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.mobile_menu .head .opened span {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+}
+
+.mobile_menu .head .opened span:first-of-type {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile_menu .head .opened span:last-of-type {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(2px, 1px);
+  transform: rotate(45deg) translate(2px, 1px);
+}
+
+.mobile_menu .head .logo {
+  padding-right: 4%;
 }
 
 .mobile_menu span {
   margin-right: 10px;
-}
-
-.mobile_menu .menu_button {
-  text-align: right;
-  padding: 0 4%;
-}
-
-.mobile_menu .menu_button a:hover {
-  color: #707070 !important;
-}
-
-.mobile_menu .menu_button i {
-  font-size: 20px;
 }
 
 .mobile_menu .body {
@@ -282,6 +402,26 @@ header ul li a {
   color: #707070;
 }
 
+.mobile_menu .body .search div {
+  position: relative;
+  text-align: center;
+}
+
+.mobile_menu .body .search div i {
+  position: absolute;
+  left: 40px;
+  top: 6px;
+}
+
+.mobile_menu .body .search div input {
+  width: 85%;
+  margin: 0 5%;
+  height: 40px;
+  padding: 2%;
+  border-color: rgba(112, 112, 112, 0.1);
+  border-width: 1px;
+}
+
 .icon_content {
   padding: 0 !important;
 }
@@ -314,8 +454,12 @@ header ul li a {
   margin: 0;
 }
 
-.currency_converter {
+.currency_converter ul li {
   margin: 0 4%;
+}
+
+.currency_converter .content_header {
+  padding: 0;
 }
 
 .currency_converter table {
@@ -477,8 +621,97 @@ header ul li a {
   text-align: left !important;
 }
 
+.stock .details {
+  padding: 0 15%;
+}
+
+.stock .details .row_values .inner_values {
+  font-size: 12px;
+}
+
+.stock .details .row_values .inner_values li {
+  text-align: center;
+}
+
+.stock .details .row_values .divider {
+  margin-left: 10px;
+}
+
+.stock .details .row_values .divider span {
+  display: inline-block;
+  height: 2em;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.stock .details .line_statistics .win {
+  width: 45%;
+}
+
+.stock .details .line_statistics .win li:nth-child(2) {
+  background: #AEB756;
+  height: 10px;
+  margin: 6% 0;
+}
+
+.stock .details .line_statistics .fixed {
+  width: 20%;
+}
+
+.stock .details .line_statistics .fixed li:nth-child(2) {
+  background: #707070;
+  height: 10px;
+  margin: 14% 0;
+}
+
+.stock .details .line_statistics .lose {
+  width: 35%;
+}
+
+.stock .details .line_statistics .lose ul li {
+  text-align: left;
+}
+
+.stock .details .line_statistics .lose li:nth-child(2) {
+  background: #E20C0C;
+  height: 10px;
+  margin: 8% 0;
+}
+
+.stock .details .companies_title {
+  background: #AEB756;
+  color: #fff;
+  font-size: 12px;
+  padding: 2%;
+  margin-top: 4%;
+}
+
+.stock .details .most_companies_title {
+  margin: 15px 0;
+}
+
+.stock .details .most_catigories li:not(:last-child) {
+  margin-left: 21%;
+}
+
+.stock .details .most_catigories span {
+  margin: 0;
+}
+
+.stock .details .most_catigories .clicked {
+  border-bottom: #AEB756 2px solid;
+  padding-bottom: 12px;
+}
+
+.stock .details .most_companoes_row div:not(:last-child) {
+  margin-left: 30%;
+}
+
 .highcharts-legend, .highcharts-title {
   display: none;
+}
+
+.highcharts-container {
+  height: 400px;
 }
 
 @media (min-width: 360px) {
@@ -498,6 +731,9 @@ header ul li a {
     display: block;
   }
   .mobile_menu .com {
+    width: 100%;
+  }
+  .icon_content_width {
     width: 100%;
   }
 }
@@ -520,6 +756,10 @@ header ul li a {
   }
   .nav_bar li:not(:last-child) {
     margin-left: 3%;
+  }
+  .nav_bar .main_list, .nav_bar .more_lsit {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
