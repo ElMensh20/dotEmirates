@@ -36,7 +36,7 @@ header ul li a {
   left: 8%;
 }
 
-.header_icon_content .icon_content .wheather {
+.header_icon_content .icon_content .weather {
   left: 4%;
 }
 
@@ -67,7 +67,7 @@ header ul li a {
 }
 
 .text-right ul {
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 .text-right img {
@@ -147,7 +147,7 @@ header ul li a {
 
 .mobile_menu .head {
   margin-bottom: 20px;
-  padding-top: 4%;
+  padding: 4% 6% 0;
 }
 
 .mobile_menu .head .menu_button {
@@ -207,15 +207,12 @@ header ul li a {
 }
 
 .mobile_menu .body .main_menu li {
-  margin: 25px 0;
-}
-
-.mobile_menu .body .main_menu li {
   float: none;
   text-align: right;
 }
 
 .mobile_menu .body .main_menu .icons {
+  height: 45px;
   font-size: 25px;
 }
 
@@ -223,7 +220,7 @@ header ul li a {
   color: black;
 }
 
-.mobile_menu .body .main_menu .icons li {
+.mobile_menu .body .main_menu .icons li:not(:last-child) {
   float: right;
   margin-left: 10%;
 }
@@ -247,6 +244,14 @@ header ul li a {
   color: #707070;
 }
 
+.mobile_menu .body .main_menu > li {
+  margin: 17px 0;
+}
+
+.mobile_menu .body .search {
+  padding: 25px 0;
+}
+
 .mobile_menu .body .search div {
   position: relative;
   text-align: center;
@@ -254,7 +259,7 @@ header ul li a {
 
 .mobile_menu .body .search div i {
   position: absolute;
-  left: 40px;
+  left: 9%;
   top: 6px;
 }
 
@@ -319,54 +324,54 @@ header ul li a {
   padding-top: 2%;
 }
 
-.prayer_time, .wheather {
+.prayer_time, .weather {
   padding: 0 4%;
 }
 
-.prayer_time .divider span, .wheather .divider span {
+.prayer_time .divider span, .weather .divider span {
   display: inline-block;
   height: 4em;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.prayer_time .outter, .wheather .outter {
+.prayer_time .outter, .weather .outter {
   margin: 0 5%;
   height: 90px;
 }
 
-.prayer_time .outter li:not(.inner), .wheather .outter li:not(.inner) {
+.prayer_time .outter li:not(.inner), .weather .outter li:not(.inner) {
   float: right;
 }
 
-.prayer_time table, .wheather table {
+.prayer_time table, .weather table {
   width: 100%;
 }
 
-.prayer_time table td:nth-child(3), .wheather table td:nth-child(3) {
+.prayer_time table td:nth-child(3), .weather table td:nth-child(3) {
   width: 35%;
 }
 
-.prayer_time .first_col, .wheather .first_col {
+.prayer_time .first_col, .weather .first_col {
   margin: 0 8%;
 }
 
-.prayer_time .first_col ul li, .wheather .first_col ul li {
+.prayer_time .first_col ul li, .weather .first_col ul li {
   text-align: center !important;
 }
 
-.prayer_time .second_col, .wheather .second_col {
+.prayer_time .second_col, .weather .second_col {
   margin-right: 8%;
 }
 
-.prayer_time .second_col ul li, .wheather .second_col ul li {
+.prayer_time .second_col ul li, .weather .second_col ul li {
   text-align: center !important;
 }
 
-.prayer_time .content_row table, .wheather .content_row table {
+.prayer_time .content_row table, .weather .content_row table {
   width: 100%;
 }
 
-.prayer_time .content_row table td, .wheather .content_row table td {
+.prayer_time .content_row table td, .weather .content_row table td {
   text-align: center;
 }
 
@@ -569,7 +574,7 @@ header ul li a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   header div {
     display: none;
   }
@@ -587,52 +592,6 @@ header ul li a {
   }
 }
 
-@media (min-width: 768px) {
-  .text-right .com {
-    margin: 0;
-  }
-  .text-right .first {
-    margin: 0 8px;
-  }
-  .text-right .last {
-    margin: 0 8px;
-  }
-  .text-right .icons {
-    margin: 0 2%;
-  }
-  .nav_bar span {
-    font-size: 13px;
-  }
-  .nav_bar {
-    margin-bottom: 20px;
-  }
-  .nav_bar li:not(:last-child) {
-    margin-left: 3%;
-  }
-  .nav_bar .main_list, .nav_bar .more_lsit {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-}
-
-@media (min-width: 960px) {
-  .text-right .icons {
-    margin: 0 2%;
-  }
-  .text-right .first {
-    margin: 0 12px;
-  }
-  .text-right .last {
-    margin: 0 12px;
-  }
-  .nav_bar li:not(:last-child) {
-    margin-left: 5%;
-  }
-  .nav_bar span {
-    font-size: 16px;
-  }
-}
-
 @media (min-width: 1140px) {
   .text-right .icons {
     margin: 0 2%;
@@ -642,6 +601,9 @@ header ul li a {
   }
   .text-right .last {
     margin: 0 15px;
+  }
+  .nav_bar {
+    margin-bottom: 20px;
   }
   .nav_bar li:not(:last-child) {
     margin-left: 5%;

@@ -16,31 +16,31 @@
   padding: 2%;
 }
 
-.main_event .custom_card .cc-header {
+.main_event .custom_card .fc-header {
   text-align: right;
 }
 
-.main_event .custom_card .cc-header img {
+.main_event .custom_card .fc-header img {
   float: right;
   height: 50px;
 }
 
-.main_event .custom_card .cc-header p {
+.main_event .custom_card .fc-header p {
   margin: 0;
 }
 
-.main_event .custom_card .cc-header span {
+.main_event .custom_card .fc-header span {
   font-size: 12px;
 }
 
-.main_event .custom_card .cc-body {
+.main_event .custom_card .fc-body {
   text-align: right;
   float: right;
   padding-bottom: 2%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.main_event .custom_card .cc-footer {
+.main_event .custom_card .fc-footer {
   float: left;
   padding-top: 3%;
 }

@@ -2,6 +2,10 @@
   margin: 40px 0;
 }
 
+.row_1 .custom_text, .row_2 .custom_text {
+  height: 60px;
+}
+
 .card {
   padding: 0 18px;
 }
@@ -12,6 +16,7 @@
 
 .blogs_1 hr {
   margin: 0;
+  height: 1px;
 }
 
 .card {
@@ -55,11 +60,12 @@
   padding: 0 0 0 10px;
   text-align: right;
   color: #707070;
+  height: 190px;
 }
 
 .card-title {
   color: #AEB756;
-  height: 67px;
+  height: 90px;
   overflow-y: hidden;
   margin-top: 10px;
   font-size: 20px;
@@ -68,13 +74,13 @@
 
 .card-text {
   overflow-y: hidden;
-  height: 60px;
+  height: 150px;
   margin-bottom: 30px;
   font-size: 16px;
 }
 
 .small .card-text {
-  height: 150px !important;
+  height: 95px !important;
   margin-bottom: 20px;
 }
 
@@ -117,23 +123,209 @@
   margin-top: 40px;
 }
 
-.row_2 .large .card-header {
-  padding-bottom: 3px;
+.row_2 .card-body {
+  height: 195px;
 }
 
-.row_2 .large .card-text {
-  height: 145px;
+.row_2 .card-body .card-title {
+  height: 60px;
 }
 
-.row_2 .large .card-image img {
-  height: 230px;
-  margin-top: 5px;
+.row_2 .custom_card .card-img-top {
+  width: 50%;
+  height: 220px;
+  float: right;
+  margin-top: 18px;
 }
 
-@media (min-width: 1200px) {
-  .row_1 .card:nth-child(2), .row_2 .card:nth-child(2) {
-    border-left: 1px solid rgba(0, 0, 0, 0.125);
+.row_2 .custom_card .card-content {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.row_2 .custom_card .card-content .card-body {
+  height: 184px;
+}
+
+.row_2 .custom_card .card-content .card-body .card-text {
+  height: 96px;
+}
+
+.main_event {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.main_event .background {
+  width: 100%;
+}
+
+.main_event .floating_card {
+  color: #707070;
+  background: #ffffffe6;
+  position: absolute;
+  right: 30px;
+  bottom: 7%;
+  width: 70%;
+  height: 244px;
+  padding: 2% 2% 2% 0;
+}
+
+.main_event .floating_card .fc-header {
+  text-align: right;
+}
+
+.main_event .floating_card .fc-header .el_youm {
+  margin-right: 8px;
+  text-align: right;
+}
+
+.main_event .floating_card .fc-header .el_youm p {
+  font-size: 20px;
+}
+
+.main_event .floating_card .fc-header img {
+  margin-top: 10px;
+  float: right;
+  height: 37px;
+}
+
+.main_event .floating_card .fc-header p {
+  margin: 0;
+}
+
+.main_event .floating_card .fc-header span {
+  font-size: 12px;
+}
+
+.main_event .floating_card .fc-body {
+  height: 90px;
+  font-size: 24px;
+  float: right;
+  padding: 0 0 2% 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main_event .floating_card .fc-body .card-text {
+  font-size: 24px;
+  text-align: right;
+}
+
+.main_event .floating_card .fc-footer {
+  float: left;
+  padding: 3% 0 3% 3%;
+}
+
+.main_event .floating_card .fc-footer ul li:not(:last-child) {
+  margin-left: 12px;
+}
+
+.main_event button {
+  background: #AEB756;
+  border: 0;
+  position: absolute;
+  bottom: 7%;
+  right: 600px;
+  color: white;
+}
+
+.main_event button i {
+  font-size: 30px;
+}
+
+.blogs_2 .row {
+  margin-top: 30px;
+}
+
+.blogs_2 .card-text {
+  height: 78px;
+}
+
+.blogs_2 .card-footer ul {
+  float: left;
+}
+
+.blogs_2 .card-footer span {
+  float: right;
+}
+
+.blogs_2 .large {
+  border-right: 0;
+}
+
+.blogs_2 .small {
+  border: 0;
+}
+
+@media (min-width: 360px) {
+  .row_1 .card .card-body {
+    height: 215px;
+  }
+  .row_1 .card .card-body .card-text {
+    height: 90px;
+  }
+  .card-img-top {
+    height: 270px;
+  }
+}
+
+@media (max-width: 765px) {
+  .card:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
+  .row_2 .custom_card .card-img-top {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    float: none;
+    margin-top: 18px;
+  }
+  .row_2 .custom_card .card-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .row_2 .custom_card .card-content .card-body .card-text {
+    height: 90px;
+  }
+  .main_event .background {
+    height: 370px;
+  }
+  .main_event .floating_card {
+    height: 210px;
+  }
+  .main_event .floating_card .el_youm p {
+    font-size: 14px;
+  }
+  .main_event .floating_card .fc-body {
+    padding-left: 10%;
+  }
+  .main_event .floating_card .fc-body .card-text {
+    font-size: 16px;
+    height: 65px;
+  }
+  .main_event .floating_card .fc-footer ul li:not(:last-child) {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 765px) {
+  .card:nth-child(2) {
+    border-left: 0;
     border-right: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .main_event .floating_card {
+    height: 220px;
+  }
+  .main_event .floating_card .el_youm p {
+    font-size: 14px;
+  }
+  .main_event .floating_card .fc-body {
+    padding-left: 3%;
+  }
+  .main_event .floating_card .fc-body .card-text {
+    font-size: 16px;
   }
 }
 
@@ -143,13 +335,23 @@
   }
   .card:nth-child(2) {
     border-left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .main_event .floating_card {
+    height: 241px;
+  }
+  .main_event .floating_card .el_youm p {
+    font-size: 16px;
+  }
+  .main_event .floating_card .fc-body .card-text {
+    font-size: 20px;
   }
 }
 
-@media (min-width: 650px) {
-  .card:nth-child(2) {
-    border-right: 0;
-    border-left: 0;
+@media (min-width: 1200px) {
+  .row_1 .card:nth-child(2), .row_2 .card:nth-child(2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -11,17 +11,17 @@
   text-justify: inter-word;
 }
 
-* a {
+a {
   color: #707070;
   text-decoration: none;
 }
 
-* a:hover, * a:active {
+a:hover, a:active {
   color: #AEB756;
   text-decoration: none;
 }
 
-* a:hover i, * a:active i {
+a:hover i, a:active i {
   color: #AEB756;
 }
 
@@ -172,4 +172,4 @@ ul li {
 .card-text, .card-title {
   line-height: 29px;
 }
-/*# sourceMappingURL=gloabl.css.map */
+/*# sourceMappingURL=global.css.map */
