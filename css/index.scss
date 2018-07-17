@@ -145,7 +145,7 @@
     position: absolute;
     right: 30px;
     bottom: 7%;
-    width: 70%;
+    width: 50%;
     padding: 2% 2% 2% 0;
     .fc-header{
       text-align: right;
@@ -209,7 +209,7 @@
       padding: 15px;
       text-align: center;
       position: absolute;
-      left: 228px;
+      left: 41.5%;
       bottom: 30px;
       background: #AEB756;
       width: 75px;
@@ -303,6 +303,55 @@
       margin-top: 24px;
     }
   }
+}
+.blogs_3{
+  .card{
+    border-right: none  !important;
+    .card-header{
+      height: 48px;
+      font-size: 20px;
+      img{
+        height: 37px;
+        margin-top: 5px;
+      }
+      .el_youm{
+        line-height: 1;
+        span{
+          font-size: 12px;
+        }
+      }
+    }
+    .card-img-top{
+      height: 323px;
+      margin-top:14px;
+    }
+    .card-body{
+      height: 163px;
+      .card-title{
+        font-size: 24px;
+        height: 65px;
+      }
+      .card-text{
+        height: 60px;
+        font-family: "regular";
+        font-size: 16px;
+      }
+    }
+    .card-footer{
+      padding-top: 30px;
+      ul{
+        li:not(:last-child){
+          margin-left: 13px;
+        }
+      }
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}
+footer{
+  
 }
 //@media Query **************************
 @media (min-width:360px){
@@ -461,4 +510,9 @@
       border-right: 1px solid rgba(0,0,0,.125) ;
     }
  }
+}
+@media (min-width: 1200px){
+  .container{
+    max-width: 1275px;
+  }
 }

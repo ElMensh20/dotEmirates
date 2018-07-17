@@ -86,7 +86,6 @@ header ul li a {
 }
 
 .text-right .com {
-  margin: 0 1%;
   padding-top: 20px;
   font-size: 15px;
 }
@@ -96,7 +95,7 @@ header ul li a {
 }
 
 .text-right .search {
-  margin-right: 3%;
+  margin-right: 30px;
   padding-top: 10px;
 }
 
@@ -611,16 +610,16 @@ header ul li a {
 
 @media (min-width: 1200px) {
   .text-right .icons {
-    margin: 0 3%;
+    margin: 0 20px;
   }
   .text-right .first {
-    margin: 0 20px;
+    margin: 0 30px 0 13px;
   }
   .text-right .last {
-    margin: 0 20px;
+    margin: 0 13px 0 30px;
   }
   .nav_bar li:not(:last-child) {
-    margin-left: 6%;
+    margin-left: 7%;
   }
 }
 /*# sourceMappingURL=header_navbar.css.map */
