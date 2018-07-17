@@ -15,11 +15,6 @@ header{
       float: none;
     }
     .gas_price{
-      
-      left: 15%;
-      .gas_price_header {
-        float: right;
-      }
       ul{
         margin-right: 0;
       }
@@ -249,6 +244,7 @@ header{
   }
 }
 .gas_price{
+  left: 25%;
   table{
     width:100%;
     td:nth-child(3){

@@ -16,14 +16,6 @@ header ul li a {
   float: none;
 }
 
-.header_icon_content .icon_content .gas_price {
-  left: 15%;
-}
-
-.header_icon_content .icon_content .gas_price .gas_price_header {
-  float: right;
-}
-
 .header_icon_content .icon_content .gas_price ul {
   margin-right: 0;
 }
@@ -282,6 +274,10 @@ header ul li a {
 
 .content_header i {
   font-size: 25px;
+}
+
+.gas_price {
+  left: 25%;
 }
 
 .gas_price table {
