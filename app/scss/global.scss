@@ -42,13 +42,28 @@ ul{
 .sm_font{
     font-size: 10px !important;
 }
+.md_font{
+    font-size: 18px;
+}
 .lg_font{
     font-size: 24px !important;
 }
 .xl_font{
     font-size: 49px !important;
 }
-@media (min-width: 1200px){
+.focused{
+    opacity: 1 !important;
+}
+.clicked{
+    border-bottom: 2px solid $green;
+}
+.chosen{
+    color:$green;
+}
+.dark_gray{
+    color:#444444 ;
+}
+@media (min-width: 1300px){
   .container {
       max-width: 1255px;
   }

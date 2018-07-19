@@ -42,7 +42,7 @@ $(document).ready(function() {
        {
           name: 'Africa',
           data: [106, 107, 111, 133, 221, 767, 1766],
-          color:'#56D9FE'
+          color:'#44444462'
        }, 
        {
           name: 'Europe',

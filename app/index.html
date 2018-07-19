@@ -121,7 +121,7 @@
                   <i class="icon-currency-converter"></i>
                   <div class="widget_content currency_converter display_none">
                     <div class="widget_header">
-                      <input type="text" placeholder="أدخل العملة">
+                      <input type="number" placeholder="أدخل العملة">
                         <span>محول العملات</span>
                         <i class="icon-gas-price"></i>
                     </div>
@@ -188,8 +188,8 @@
                   <i class="icon-weather"></i>
                   <div class="widget_content weather display_none">
                       <div class="widget_header">
-                          <span>أسعار الوقود</span>
-                          <i class="icon-gas-price"></i>
+                          <span> الطقس</span>
+                          <i class="icon-weather"></i>
                       </div>
                       <div class="widget_hero clearfix">
                         <div class="float_left  line_height_one">
@@ -216,7 +216,16 @@
                               <i class="icon-sun float_right xl_font"></i>
                               <div class="item_body float_right">
                                 <ul>
-                                  <li class="border_bottom">2 AM</li>
+                                  <li class="border_bottom">12 AM</li>
+                                  <li>°26</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="slider_item clearfix">
+                              <i class="icon-sun float_right xl_font"></i>
+                              <div class="item_body float_right">
+                                <ul>
+                                  <li class="border_bottom">1 AM</li>
                                   <li>°26</li>
                                 </ul>
                               </div>
@@ -234,7 +243,7 @@
                               <i class="icon-sun float_right xl_font"></i>
                               <div class="item_body float_right">
                                 <ul>
-                                  <li class="border_bottom">2 AM</li>
+                                  <li class="border_bottom">3 AM</li>
                                   <li>°26</li>
                                 </ul>
                               </div>
@@ -243,7 +252,7 @@
                               <i class="icon-sun float_right xl_font"></i>
                               <div class="item_body float_right">
                                 <ul>
-                                  <li class="border_bottom">2 AM</li>
+                                  <li class="border_bottom">4 AM</li>
                                   <li>°26</li>
                                 </ul>
                               </div>
@@ -252,16 +261,7 @@
                               <i class="icon-sun float_right xl_font"></i>
                               <div class="item_body float_right">
                                 <ul>
-                                  <li class="border_bottom">2 AM</li>
-                                  <li>°26</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="slider_item clearfix">
-                              <i class="icon-sun float_right xl_font"></i>
-                              <div class="item_body float_right">
-                                <ul>
-                                  <li class="border_bottom">2 AM</li>
+                                  <li class="border_bottom">5 AM</li>
                                   <li>°26</li>
                                 </ul>
                               </div>
@@ -273,29 +273,502 @@
                           <i class="icon-next"></i>
                         </div>
                       </div>
-                      <div class="widget_body"></div>
+                      <div class="widget_body">
+                        <div class="widget_row clearfix">
+                          <span class="float_right md_font">الخميس</span>
+                          <i class="icon-sun float_right lg_font"></i>
+                          <div class="float_right lg_font">
+                            <span>°26</span>
+                            <span>°26</span
+                          ></div>
+                        </div>
+                        <div class="widget_row clearfix">
+                          <span class="float_right md_font">الخميس</span>
+                          <i class="icon-sun float_right lg_font"></i>
+                          <div class="float_right lg_font">
+                            <span>°26</span>
+                            <span>°26</span
+                          ></div>
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <div class="one_widget">
                   <i class="icon-stock"></i>
-                  <div class="widget_content display_none">
+                  <div class="widget_content stock display_none">
                       <div class="widget_header">
-                          <span>أسعار الوقود</span>
-                          <i class="icon-gas-price"></i>
+                          <span>الأسواق</span>
+                          <i class="icon-stock"></i>
                       </div>
-                      <div class="widget_body"></div>
+                      <div class="widget_nav border_bottom clearfix">
+                        <div class="widget_tab clicked ">
+                            <span class="chosen">ADI</span>
+                        </div>
+                        <div class="widget_tab">
+                          <span class="dark_gray">DFMGI</span>
+                        </div>
+                        <div class="widget_tab_data clearfix">
+                          <div class="ADI_data  chosen">-0.09% -4</div>
+                          <div class="DFMGI_data dark_gray">4,519.58</div>
+                        </div>
+                      </div>
+                      <div class="widget_stat">
+                          <div id="stock_graph_container" style="width:360; height:360px; margin: auto"></div>
+                        </div>
+                      <div class="widget_body">
+                          <div class="stat_data">
+                              <div class="column">
+                                <ul>
+                                  <li class="dark_gray">حجم التداول</li>
+                                  <li class="size">381,870,534</li>
+                                </ul>
+                              </div>
+                              <div class="column">
+                                <ul>
+                                  <li class="dark_gray">قيمة التداول</li>
+                                  <li class="quantity">381,870,534</li>
+                                </ul>
+                              </div>
+                              <div class="column">
+                                <ul>
+                                  <li class="dark_gray">عدد العمليات</li>
+                                  <li class="count">381,870,534</li>
+                                </ul>
+                              </div>
+                          </div>
+                          <div class="stat_line">
+                            <div class="win">
+                              <ul>
+                                <li>20</li>
+                                <li></li>
+                                <li>رابحة</li>
+                              </ul>
+                            </div>
+                            <div class="normal">
+                              <ul>
+                                <li>4</li>
+                                <li></li>
+                                <li>ثابتة</li>
+                              </ul>
+                            </div>
+                            <div class="lose">
+                              <ul>
+                                <li>20</li>
+                                <li></li>
+                                <li>خاسرة</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="wide_head">
+                              الشركات المتداولة 83
+                          </div>
+                          <div class="sub_head border_bottom">
+                              الشركات الأكثر
+                          </div>
+                          <div class="body_content">
+                            <div class="nav_content border_bottom">
+                              <div class="clicked"><span>ربحًا</span></div>
+                              <div><span>خسارة</span></div>
+                              <div><span>قيمة</span></div>
+                              <div><span>كمية</span></div>
+                            </div>
+                            <div class="content_row clearfix">
+                              <span>أسمنت الاتحاد</span>
+                              <span>20</span>
+                              <div>
+                                  <i class="icon-play"></i>
+                              </div>
+                            </div>
+                            <div class="content_row clearfix">
+                              <span>أسمنت الاتحاد</span>
+                              <span>20</span>
+                              <div>
+                                  <i class="icon-play"></i>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                   </div>
                 </div>
             </div>
             <div class="component local float_left">EN</div>
         </div>
     </header>
-    <nav></nav>
+    <nav class="border_bottom">
+      <div class="container clearfix">
+        <div class="one">
+          <div class="page_tab clicked"><span>الرئيسية</span><i class="icon-home"></i></div>
+          <div class="page_tab"><span>الإمارات</span><i class="icon-emirate"></i></div>
+          <div class="page_tab"><span>العالم</span><i class="icon-global"></i></div>
+          <div class="page_tab"><span>مال وأعمال</span><i class="icon-business"></i></div>
+          <div class="page_tab"><span>رياضة</span><i class="icon-sport"></i></div>
+          <div class="page_tab"><span>علوم وتكنولوجيا</span><i class="icon-science"></i></div>
+          <div class="page_tab more"><span>المزيد </span><i class="icon-next"></i></div>
+        </div>
+        <div class="two display_none">
+          <div class="page_tab back"><span>رجوع </span><i class="icon-prev"></i></div>
+          <div class="page_tab"><span>لايف ستايل</span><i class="icon-life_style"></i></div>
+          <div class="page_tab"><span>فن وثقافة</span><i class="icon-cenima"></i></div>
+          <div class="page_tab"><span>حوادث وقضايا</span><i class="icon-news"></i></div>
+          <div class="page_tab"><span>الصحة</span><i class="icon-health"></i></div>
+          <div class="page_tab"><span>المقالات</span><i class="icon-newspaper"></i></div>
+        </div>
+      </div>
+    </nav>
+    <div class="menu_head container clearfix">
+      <div class="menu_button float_right">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span class="float_right">القائمة</span>
+    </div>
+    <section class="mobile_menu container display_none">
+      <div class="menu_body ">
+        <div class="widget_icons clearfix">
+            <i class="icon-gas-price"></i>
+            <i class="icon-currency-converter"></i>
+            <i class="icon-prayer-times"></i>
+            <i class="icon-weather"></i>
+            <i class="icon-stock"></i>
+        </div>
+        <div class="widgets">
+          <div class="one_widget">
+            <div class="widget_content gas_price display_none ">
+              <div class="widget_header">
+                <span>أسعار الوقود</span>
+                <i class="icon-gas-price"></i>
+              </div>
+              <div class="widget_body">
+                <div class="widget_row">
+                  <div class="float_left">
+                    <ul>
+                      <li>سوبر 98</li>
+                      <li>2.0</li>
+                    </ul>
+                  </div>
+                  <span>جازولين</span>
+                  <i class="icon-gasoline1"></i>
+                </div>
+                <div class="widget_row">
+                    <div class="float_left">
+                      <ul>
+                        <li>سوبر 98</li>
+                        <li>2.0</li>
+                      </ul>
+                    </div>
+                    <span>جازولين</span>
+                    <i class="icon-gasoline1"></i>
+                </div>
+                <div class="widget_row">
+                    <div class="float_left">
+                      <ul>
+                        <li>سوبر 98</li>
+                        <li>2.0</li>
+                      </ul>
+                    </div>
+                    <span>جازولين</span>
+                    <i class="icon-gasoline1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="one_widget">
+            <div class="widget_content currency_converter display_none">
+              <div class="widget_header">
+                <input type="number" placeholder="أدخل العملة">
+                  <span>محول العملات</span>
+                  <i class="icon-gas-price"></i>
+              </div>
+              <div class="widget_body">
+                <div class="widget_row">
+                  <span>1،444</span>
+                  <span>درهم إماراتي  </span>
+                  <img src="images/flag.png" alt="flag">
+                </div>
+                <div class="widget_row">
+                  <span>1،444</span>
+                  <span>درهم إماراتي  </span>
+                  <img src="images/flag.png" alt="flag">
+                </div>
+                <div class="widget_row">
+                  <span>1،444</span>
+                  <span>درهم إماراتي  </span>
+                  <img src="images/flag.png" alt="flag">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="one_widget">
+            <div class="widget_content prayer_times display_none">
+                <div class="widget_header">
+                    <span>مواقيت الصلاة</span>
+                    <i class="icon-prayer-times"></i>
+                </div>
+                <div class="widget_hero clearfix">
+                  <div class="float_left line_height_one">
+                    <ul>
+                      <li>الخميس</li>
+                      <li class="xl_font">15</li>
+                      <li class="sm_font">مارس 2018</li>
+                    </ul>
+                  </div>
+                  <div class="float_left border_left">
+                    <ul>
+                      <li>المغرب</li>
+                      <li class="lg_font">12:33</li>
+                      <li>الظهر</li>
+                    </ul>
+                  </div>
+                  <div class="float_left border_left">
+                      <i class="icon-sun_1"></i>
+                  </div>
+                </div>
+                <div class="widget_body">
+                  <div class="widget_row">
+                    <span>12:33</span>
+                    <i class="icon-sun"></i>
+                    <span>الفجر</span>
+                  </div>
+                  <div class="widget_row">
+                    <span>12:33</span>
+                    <i class="icon-sun"></i>
+                    <span>الفجر</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="one_widget">
+            <div class="widget_content weather display_none">
+                <div class="widget_header">
+                    <span> الطقس</span>
+                    <i class="icon-weather"></i>
+                </div>
+                <div class="widget_hero clearfix">
+                  <div class="float_left  line_height_one">
+                    <ul>
+                      <li>الخميس</li>
+                      <li class="xl_font">15</li>
+                      <li class="sm_font">مارس 2018</li>
+                    </ul>
+                  </div>
+                  <div class="float_left border_left line_height_one">
+                    <ul>
+                      <li>المغرب</li>
+                      <li class="xl_font"><span>°</span>26</li>
+                      <li class="sm_font">غالبا مشمس</li>
+                    </ul>
+                  </div>
+                  <div class="float_left border_left">
+                      <i class="icon-sun"></i>
+                  </div>
+                </div>
+                <div class="widget_slider">
+                  <div class="slider_body clearfix">
+                    <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">12 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">1 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">2 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">3 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">4 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="slider_item clearfix">
+                        <i class="icon-sun float_right xl_font"></i>
+                        <div class="item_body float_right">
+                          <ul>
+                            <li class="border_bottom">5 AM</li>
+                            <li>°26</li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <hr class="slider_hr">
+                  <div class="slider_footer">
+                    <i class="icon-prev"></i>
+                    <i class="icon-next"></i>
+                  </div>
+                </div>
+                <div class="widget_body">
+                  <div class="widget_row clearfix">
+                    <span class="float_right md_font">الخميس</span>
+                    <i class="icon-sun float_right lg_font"></i>
+                    <div class="float_right lg_font">
+                      <span>°26</span>
+                      <span>°26</span
+                    ></div>
+                  </div>
+                  <div class="widget_row clearfix">
+                    <span class="float_right md_font">الخميس</span>
+                    <i class="icon-sun float_right lg_font"></i>
+                    <div class="float_right lg_font">
+                      <span>°26</span>
+                      <span>°26</span
+                    ></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="one_widget">
+            <div class="widget_content stock display_none">
+                <div class="widget_header">
+                    <span>الأسواق</span>
+                    <i class="icon-stock"></i>
+                </div>
+                <div class="widget_nav border_bottom clearfix">
+                  <div class="widget_tab clicked ">
+                      <span class="chosen">ADI</span>
+                  </div>
+                  <div class="widget_tab">
+                    <span class="dark_gray">DFMGI</span>
+                  </div>
+                  <div class="widget_tab_data clearfix">
+                    <div class="ADI_data  chosen">-0.09% -4</div>
+                    <div class="DFMGI_data dark_gray">4,519.58</div>
+                  </div>
+                </div>
+                <div class="widget_stat">
+                    <div id="stock_graph_container" style="width:360; height:360px; margin: auto"></div>
+                  </div>
+                <div class="widget_body">
+                    <div class="stat_data">
+                        <div class="column">
+                          <ul>
+                            <li class="dark_gray">حجم التداول</li>
+                            <li class="size">381,870,534</li>
+                          </ul>
+                        </div>
+                        <div class="column">
+                          <ul>
+                            <li class="dark_gray">قيمة التداول</li>
+                            <li class="quantity">381,870,534</li>
+                          </ul>
+                        </div>
+                        <div class="column">
+                          <ul>
+                            <li class="dark_gray">عدد العمليات</li>
+                            <li class="count">381,870,534</li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="stat_line">
+                      <div class="win">
+                        <ul>
+                          <li>20</li>
+                          <li></li>
+                          <li>رابحة</li>
+                        </ul>
+                      </div>
+                      <div class="normal">
+                        <ul>
+                          <li>4</li>
+                          <li></li>
+                          <li>ثابتة</li>
+                        </ul>
+                      </div>
+                      <div class="lose">
+                        <ul>
+                          <li>20</li>
+                          <li></li>
+                          <li>خاسرة</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="wide_head">
+                        الشركات المتداولة 83
+                    </div>
+                    <div class="sub_head border_bottom">
+                        الشركات الأكثر
+                    </div>
+                    <div class="body_content">
+                      <div class="nav_content border_bottom">
+                        <div class="clicked"><span>ربحًا</span></div>
+                        <div><span>خسارة</span></div>
+                        <div><span>قيمة</span></div>
+                        <div><span>كمية</span></div>
+                      </div>
+                      <div class="content_row clearfix">
+                        <span>أسمنت الاتحاد</span>
+                        <span>20</span>
+                        <div>
+                            <i class="icon-play"></i>
+                        </div>
+                      </div>
+                      <div class="content_row clearfix">
+                        <span>أسمنت الاتحاد</span>
+                        <span>20</span>
+                        <div>
+                            <i class="icon-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="page_tab "><a href="#"><span>الرئيسية</span><i class="icon-home"></i></a></div>
+        <div class="page_tab"><span>الإمارات</span><i class="icon-emirate"></i></div>
+        <div class="page_tab"><span>العالم</span><i class="icon-global"></i></div>
+        <div class="page_tab"><span>مال وأعمال</span><i class="icon-business"></i></div>
+        <div class="page_tab"><span>رياضة</span><i class="icon-sport"></i></div>
+        <div class="page_tab"><span>علوم وتكنولوجيا</span><i class="icon-science"></i></div>
+        <div class="page_tab"><span>لايف ستايل</span><i class="icon-life_style"></i></div>
+        <div class="page_tab"><span>فن وثقافة</span><i class="icon-cenima"></i></div>
+        <div class="page_tab"><span>حوادث وقضايا</span><i class="icon-news"></i></div>
+        <div class="page_tab"><span>الصحة</span><i class="icon-health"></i></div>
+        <div class="page_tab"><span>المقالات</span><i class="icon-newspaper"></i></div>
+        <div class="social clearfix">
+          <a href="#"><i class="icon-mail"></i></a>
+          <a href="#"><i class="icon-twitter"></i></a>
+          <a href="#"><i class="icon-facebook"></i></a>
+        </div>
+      </div>
+    </section>
     <section class="content"></section>
     <footer></footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="js/charts.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
