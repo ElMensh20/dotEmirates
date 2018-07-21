@@ -4,6 +4,10 @@ $fadedWhite: rgba(112, 112, 112, 0.1);
 $gray:#707070;
 $fadedgray:#70707033;
 $halffadedgray:#F5F5F5;
+@font-face {
+    font-family: Bahij_bold;
+    src: url(fonts/Bahij_TheSansArabic-Bold.ttf);
+}
 *{
     padding:0;
     margin: 0;
@@ -63,8 +67,11 @@ ul{
 .dark_gray{
     color:#444444 ;
 }
+.over_flow{
+    overflow: hidden;
+}
 @media (min-width: 1300px){
   .container {
-      max-width: 1255px;
+      max-width: 1275px;
   }
 }
