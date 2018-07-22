@@ -23,11 +23,12 @@
 .icon-next:before { content: '\e815'; } /* '' */
 .icon-prev:before { content: '\e816'; } /* '' */
 .icon-home:before { content: '\e817'; } /* '' */
-.icon-emirate:before { content: '\e818'; } /* '' */
+.icon-emirates:before { content: '\e818'; } /* '' */
 .icon-play:before { content: '\e819'; } /* '' */
 .icon-more:before { content: '\e81a'; } /* '' */
 .icon-up-arrow:before { content: '\e81b'; } /* '' */
 .icon-prayer-times:before { content: '\e81c'; } /* '' */
+.icon-logo-icon:before { content: '\e81d'; } /* '' */
 .icon-search:before { content: '\e81f'; } /* '' */
 .icon-stock:before { content: '\e820'; } /* '' */
 .icon-twitter:before { content: '\e821'; } /* '' */

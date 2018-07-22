@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icons';
-  src: url('../font/icons.eot?37386917');
-  src: url('../font/icons.eot?37386917#iefix') format('embedded-opentype'),
-       url('../font/icons.woff2?37386917') format('woff2'),
-       url('../font/icons.woff?37386917') format('woff'),
-       url('../font/icons.ttf?37386917') format('truetype'),
-       url('../font/icons.svg?37386917#icons') format('svg');
+  src: url('../font/icons.eot?60472015');
+  src: url('../font/icons.eot?60472015#iefix') format('embedded-opentype'),
+       url('../font/icons.woff2?60472015') format('woff2'),
+       url('../font/icons.woff?60472015') format('woff'),
+       url('../font/icons.ttf?60472015') format('truetype'),
+       url('../font/icons.svg?60472015#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?37386917#icons') format('svg');
+    src: url('../font/icons.svg?60472015#icons') format('svg');
   }
 }
 */
@@ -79,11 +79,12 @@
 .icon-next:before { content: '\e815'; } /* '' */
 .icon-prev:before { content: '\e816'; } /* '' */
 .icon-home:before { content: '\e817'; } /* '' */
-.icon-emirate:before { content: '\e818'; } /* '' */
+.icon-emirates:before { content: '\e818'; } /* '' */
 .icon-play:before { content: '\e819'; } /* '' */
 .icon-more:before { content: '\e81a'; } /* '' */
 .icon-up-arrow:before { content: '\e81b'; } /* '' */
 .icon-prayer-times:before { content: '\e81c'; } /* '' */
+.icon-logo-icon:before { content: '\e81d'; } /* '' */
 .icon-search:before { content: '\e81f'; } /* '' */
 .icon-stock:before { content: '\e820'; } /* '' */
 .icon-twitter:before { content: '\e821'; } /* '' */

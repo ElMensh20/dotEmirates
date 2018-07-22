@@ -8,10 +8,12 @@
   color: #707070; }
 
 a {
+  color: #707070;
   text-decoration: none; }
 
 a:hover, a:active {
-  color: #AEB756; }
+  color: #AEB756;
+  text-decoration: none; }
 
 i:hover, i:active {
   color: #AEB756 !important; }
@@ -66,4 +68,5 @@ ul {
 
 @media (min-width: 1300px) {
   .container {
+    padding: 0;
     max-width: 1275px; } }

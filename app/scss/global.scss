@@ -14,10 +14,12 @@ $halffadedgray:#F5F5F5;
     color:$gray;
 }
 a{
+    color:$gray;
     text-decoration: none;
 }
 a:hover, a:active{
     color:$green;
+    text-decoration: none;
 }
 i:hover, i:active{
     color:$green !important;
@@ -72,6 +74,7 @@ ul{
 }
 @media (min-width: 1300px){
   .container {
+      padding: 0;
       max-width: 1275px;
   }
 }
