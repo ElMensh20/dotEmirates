@@ -29,6 +29,7 @@
 .icon-up-arrow:before { content: '\e81b'; } /* '' */
 .icon-prayer-times:before { content: '\e81c'; } /* '' */
 .icon-logo-icon:before { content: '\e81d'; } /* '' */
+.icon-two-up:before { content: '\e81e'; } /* '' */
 .icon-search:before { content: '\e81f'; } /* '' */
 .icon-stock:before { content: '\e820'; } /* '' */
 .icon-twitter:before { content: '\e821'; } /* '' */
@@ -36,6 +37,10 @@
 .icon-gasoline3:before { content: '\e823'; } /* '' */
 .icon-gasoline2:before { content: '\e824'; } /* '' */
 .icon-gasoline1:before { content: '\e825'; } /* '' */
+.icon-two-down:before { content: '\e826'; } /* '' */
+.icon-right:before { content: '\e827'; } /* '' */
+.icon-left:before { content: '\e828'; } /* '' */
+.icon-intersection-2:before { content: '\e829'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-win8:before { content: '\f325'; } /* '' */
 .icon-newspaper:before { content: '\f4f0'; } /* '' */

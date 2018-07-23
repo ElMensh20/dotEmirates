@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icons';
-  src: url('../font/icons.eot?60472015');
-  src: url('../font/icons.eot?60472015#iefix') format('embedded-opentype'),
-       url('../font/icons.woff2?60472015') format('woff2'),
-       url('../font/icons.woff?60472015') format('woff'),
-       url('../font/icons.ttf?60472015') format('truetype'),
-       url('../font/icons.svg?60472015#icons') format('svg');
+  src: url('../font/icons.eot?82150160');
+  src: url('../font/icons.eot?82150160#iefix') format('embedded-opentype'),
+       url('../font/icons.woff2?82150160') format('woff2'),
+       url('../font/icons.woff?82150160') format('woff'),
+       url('../font/icons.ttf?82150160') format('truetype'),
+       url('../font/icons.svg?82150160#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?60472015#icons') format('svg');
+    src: url('../font/icons.svg?82150160#icons') format('svg');
   }
 }
 */
@@ -85,6 +85,7 @@
 .icon-up-arrow:before { content: '\e81b'; } /* '' */
 .icon-prayer-times:before { content: '\e81c'; } /* '' */
 .icon-logo-icon:before { content: '\e81d'; } /* '' */
+.icon-two-up:before { content: '\e81e'; } /* '' */
 .icon-search:before { content: '\e81f'; } /* '' */
 .icon-stock:before { content: '\e820'; } /* '' */
 .icon-twitter:before { content: '\e821'; } /* '' */
@@ -92,6 +93,10 @@
 .icon-gasoline3:before { content: '\e823'; } /* '' */
 .icon-gasoline2:before { content: '\e824'; } /* '' */
 .icon-gasoline1:before { content: '\e825'; } /* '' */
+.icon-two-down:before { content: '\e826'; } /* '' */
+.icon-right:before { content: '\e827'; } /* '' */
+.icon-left:before { content: '\e828'; } /* '' */
+.icon-intersection-2:before { content: '\e829'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-win8:before { content: '\f325'; } /* '' */
 .icon-newspaper:before { content: '\f4f0'; } /* '' */

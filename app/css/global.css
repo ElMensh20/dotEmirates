@@ -11,6 +11,9 @@ a {
   color: #707070;
   text-decoration: none; }
 
+hr {
+  margin: 0; }
+
 a:hover, a:active {
   color: #AEB756;
   text-decoration: none; }

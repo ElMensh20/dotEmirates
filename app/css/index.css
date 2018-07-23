@@ -12,6 +12,9 @@ a {
   color: #707070;
   text-decoration: none; }
 
+hr {
+  margin: 0; }
+
 a:hover, a:active {
   color: #AEB756;
   text-decoration: none; }
@@ -484,8 +487,9 @@ nav .container {
 
 .content .myrow {
   margin-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #7070700d; }
+  padding-bottom: 40px; }
+  .content .myrow:not(:last-child) {
+    border-bottom: 1px solid #7070700d; }
   .content .myrow .mycard {
     float: right; }
     .content .myrow .mycard .mycard_header img {
@@ -662,6 +666,9 @@ nav .container {
   text-align: center;
   margin-top: 24px; }
 
+.footer_hr {
+  border-color: #AEB756; }
+
 footer {
   margin-top: 68px;
   overflow: hidden; }
@@ -757,7 +764,8 @@ footer {
 
 .works .works_row {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin: 67px 0; }
   .works .works_row h3 {
     position: relative; }
     .works .works_row h3::before {
@@ -773,11 +781,23 @@ footer {
     font-weight: 500; }
   .works .works_row .hr_line {
     position: absolute;
-    top: 0;
+    top: 88px;
+    z-index: -1;
     right: 0;
     width: 100%;
     height: 1px;
     background: #7070701a; }
+    .works .works_row .hr_line span {
+      position: absolute;
+      top: -4px;
+      width: 4px;
+      height: 4px;
+      border: 5px solid #AEB756;
+      border-radius: 100%; }
+      .works .works_row .hr_line span:first-of-type {
+        left: 0; }
+      .works .works_row .hr_line span:last-of-type {
+        right: 0; }
   .works .works_row .work {
     width: 323px;
     float: left; }
@@ -791,6 +811,166 @@ footer {
       font-weight: 500; }
     .works .works_row .work p {
       font-size: 16px; }
+
+.works .fixed_height {
+  height: 430px; }
+
+.works .work_slider {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 560px;
+  border-bottom: 1px solid #70707033; }
+  .works .work_slider .hr_line {
+    top: 160px; }
+  .works .work_slider .icon {
+    position: absolute;
+    top: 140px;
+    z-index: 9999;
+    font-size: 24px; }
+  .works .work_slider .icon-right {
+    right: 182px; }
+  .works .work_slider .slider_body {
+    position: absolute;
+    display: flex;
+    transform: translate3d(0px, 0px, 0px); }
+    .works .work_slider .slider_body .work {
+      padding-top: 60px;
+      width: 430px; }
+      .works .work_slider .slider_body .work:not(:last-of-type) {
+        margin-right: 0; }
+      .works .work_slider .slider_body .work .work_img {
+        background: #fff;
+        width: fit-content;
+        margin: auto; }
+        .works .work_slider .slider_body .work .work_img img {
+          width: 201px;
+          opacity: 0.1; }
+      .works .work_slider .slider_body .work .work_des {
+        display: none; }
+        .works .work_slider .slider_body .work .work_des p {
+          white-space: pre-line;
+          height: 158px; }
+    .works .work_slider .slider_body .active {
+      padding-top: 0; }
+      .works .work_slider .slider_body .active .work_img img {
+        width: 320px;
+        opacity: 1; }
+      .works .work_slider .slider_body .active .work_des {
+        display: block; }
+  .works .work_slider .icon-left {
+    left: 195px; }
+
+.his_words {
+  height: 960px;
+  position: relative;
+  overflow: hidden; }
+  .his_words i {
+    color: #fff !important; }
+  .his_words img {
+    position: absolute;
+    top: -7px;
+    left: 169px;
+    z-index: 2; }
+  .his_words .inner {
+    padding: 147px 316px 147px 980px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 739px;
+    background-color: #707070;
+    background-image: url("../images/circles_background.png"); }
+    .his_words .inner > i {
+      font-size: 35px; }
+    .his_words .inner .icon-two-down {
+      font-size: 28px; }
+    .his_words .inner .words_slider {
+      text-align: center;
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 180px;
+      margin: 17px 0; }
+      .his_words .inner .words_slider .slider_body {
+        position: absolute;
+        display: flex;
+        transform: translate3d(0px, 0px, 0px); }
+        .his_words .inner .words_slider .slider_body .word {
+          font-size: 36px;
+          color: #fff;
+          text-align: center;
+          width: 608px;
+          white-space: pre-line; }
+    .his_words .inner .slider_footer {
+      margin-top: 70px; }
+      .his_words .inner .slider_footer i {
+        font-size: 30px; }
+        .his_words .inner .slider_footer i:not(:first-of-type) {
+          margin-left: 27px; }
+
+.his_news {
+  margin-top: 122px;
+  text-align: center; }
+  .his_news h3 {
+    margin-bottom: 72px;
+    position: relative; }
+    .his_news h3::before {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      right: 48%;
+      width: 37px;
+      height: 3px;
+      background: #AEB756; }
+
+.privacy_policy .head {
+  background: url("../images/emirates_wirefram.png");
+  padding: 80px 0 224px 0;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .privacy_policy .head .in {
+    text-align: center; }
+    .privacy_policy .head .in h3 {
+      font-size: 26px; }
+    .privacy_policy .head .in i {
+      font-size: 174px;
+      color: #AEB756; }
+
+.privacy_policy .tabs {
+  background: #70707033;
+  padding: 16px 0 14px 0;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px; }
+  .privacy_policy .tabs a:not(:last-of-type) {
+    margin-left: 62px; }
+
+.privacy_policy .body div {
+  width: 50%;
+  padding-bottom: 250px; }
+
+.privacy_policy .body .right {
+  float: right;
+  text-align: right;
+  padding-left: 88px;
+  border-left: 1px solid #70707033; }
+
+.privacy_policy .body .left {
+  text-align: left;
+  float: left;
+  padding-right: 88px; }
+
+.privacy_policy .foot {
+  text-align: left;
+  opacity: 0.6;
+  margin-bottom: -45px;
+  padding-left: 200px; }
+  .privacy_policy .foot i {
+    color: #AEB756 !important;
+    font-size: 244px; }
 
 @media (min-width: 320px) {
   .content .myrow .large {
