@@ -941,20 +941,37 @@ footer{
 .backgrund_muhamed{
   position: relative;
   background-image: url("../images/back_muhamed.png");
-  height: 1158px;
+  // height: 1158px;
   margin-top: 0;
-  img:first-of-type{
-    margin:  71px 0 32px 202px;
-  }
-  img:last-of-type{
-    margin-left: 226px;
+  font-size: 0;
+  .img_container{
+    vertical-align: middle;
+    &:first-child{
+      padding-top: 71px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 60%;
+      text-align: left;
+      img{
+        width: 100%;
+      }
+    }
+    &:nth-child(2){
+      display: inline-block;
+      vertical-align: text-bottom;
+      width: 40%;
+      img{
+        width: 80%;
+      }
+    }
   }
   .article{
     position: absolute;
     background: $gray;
     bottom: 0;
     right: 0;
-    padding: 125px 334px;
+    padding: 125px 0;
+    width: 100%;
     p{
       color:$white;
       text-align: center;
@@ -1009,13 +1026,12 @@ footer{
       }
     }
     .work{
-      width: 323px;
+      width: 323px; 
+      width: 33%;
       float: left;
-      &:not(:last-of-type){
-        margin-right: 152px;
-      }
+      padding: 0 45px;
       h3{
-        font-size: 24px
+        font-size: 24px;
       }
       span{
         color:$green;
@@ -1027,9 +1043,9 @@ footer{
       }
     }
   }
-  .fixed_height{
-    height: 430px;
-  }
+  // .fixed_height{
+  //   height: 430px;
+  // }
   .work_slider{
     position: relative;
     white-space: nowrap;
@@ -1046,7 +1062,7 @@ footer{
       font-size: 24px;
     }
     .icon-right{
-      right: 182px;
+      right: 14%;
     }
     .slider_body{
       position: absolute;
@@ -1089,67 +1105,42 @@ footer{
       }
     } 
     .icon-left{
-      left: 195px;
+      left: 16%;
     } 
   }
 }
 .his_words{
-  height: 960px;
-  position: relative;
-  overflow: hidden;
-  i{
-    color: $white !important;
-  }
   img{
-    position: absolute;
-    top:-7px;
-    left: 169px;
-    z-index: 2;
+    width: 30%;
   }
   .inner{
-    padding: 147px 316px 147px 980px;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 739px;
     background-color: $gray;
     background-image: url("../images/circles_background.png");
-    &>i{
-      font-size:35px;
-    }
-    .icon-two-down{
-      font-size: 28px;
-    }
+    text-align: left;
     .words_slider{
-      text-align: center;
-      position: relative;
-      white-space: nowrap;
-      overflow: hidden;
-      height: 180px;
-      margin: 17px 0;
+      text-align: left;
+      i{
+        color: $white; 
+      } 
+      .icon-two-up{
+        font-size: 36px;
+      }
       .slider_body{
-        position: absolute;
-        display: flex;
-        transform:translate3d(0px,0px, 0px);
+        max-width: 603px;
         .word{
+          p{
+            color: $white;
+          }
           font-size: 36px;
-          color: $white;
+          max-width: 603px;
           text-align: center;
-          width: 608px;
-          white-space: pre-line;  
         }
       }
-    }
-    .slider_footer{
-      margin-top: 70px;
-      i{
-        font-size: 30px;
-        &:not(:first-of-type){
-          margin-left: 27px;
-        }
+      .icon-two-down{
+        font-size: 24px;
+      }
+      .slider_footer{
+        font-size: 20px;
       }
     }
   }
@@ -1181,11 +1172,8 @@ footer{
     .in{
       text-align: center;
       h3{
+        margin-top: 13px;
         font-size: 26px;
-      }
-      i{
-        font-size: 174px;
-        color:$green;
       }
     }
   }
@@ -1200,6 +1188,17 @@ footer{
     }
   }
   .body{
+    line-height: 2rem;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 50%;
+      background: $fadedgray; 
+    }
     div{
       width: 50%;
       padding-bottom: 250px;
@@ -1207,28 +1206,92 @@ footer{
     .right{
       float: right;
       text-align: right;
-      padding-left: 88px;
-      border-left: 1px solid $fadedgray;
+      width: 45%;
     }
     .left{
       text-align: left;
       float: left;
-      padding-right: 88px
+      width: 45%;
     }
   }
   .foot{
     text-align: left;
     opacity: 0.6;
-    margin-bottom: -45px;
-    padding-left: 200px;
-
-    i{
-      color:$green !important;
-      font-size: 244px;
+    text-align: center;
+  }
+}
+.error_header{
+  border-bottom: 1px solid $fadedgray;
+  .container{
+    display: flex;
+    .one,.three{
+      width: 20%;
+      padding-top: 20px;
+      color:$green;
+    }
+    .two{
+      text-align: center;
+      width:60%;
+    }
+    .one{
+      text-align: left;
+      i{
+        color:$green;
+      }
+    }
+    .three{
+      text-align: right;
     }
   }
 }
-
+.error_back{
+  background-image: url("../images/Intersection 1.png");
+  background-position: left;
+  background-size: auto 100%;
+  background-repeat: no-repeat; 
+  color:$gray;
+  .container{
+    text-align: center;
+    padding: 80px 0;
+    ul{
+      li{
+        i{
+          font-size: 95px;
+          color: $green;
+        }
+        &:last-child{
+          margin-top: 36px;
+        }
+        &:first-child{
+          margin-bottom: -50px;
+          padding-right: 30px;
+        }
+        a{
+          color:$green;
+          font-size: 14px;
+        }
+      }
+      .error{
+        font-size: 111px;
+        color:$green;
+        margin: auto;
+      }
+      .error_title{
+        font-size: 18px;
+        opacity: 0.7;
+      }
+      .error_des{
+        opacity: 0.7;
+        font-size: 14px;
+        margin-top: 14px;
+        p{
+          width: 264px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 320px){
   .content{
@@ -1428,14 +1491,14 @@ footer{
       display: none;
     }
     .group{
+      width: 67%;
       &>div{
         float: left;
-        width: unset;
+        width: 50%;
       }
     }
     .center{
       height: unset;
-      margin-left: 47px;
       margin-top: 0;
       .social_center{
         position: relative;
@@ -1453,7 +1516,7 @@ footer{
       .subscribe{
         input{
           margin-top: 3px;
-          width: unset;
+          width: 70%;
         }
         button{
           margin-top: 3px;
@@ -1463,13 +1526,13 @@ footer{
     .right{
       height: 240px;
       font-size: 18px;
-      margin-top: 0;
-      margin-left: 14px;
+      margin-top: 0;  
       ul:first-of-type{
         margin-left: 52px;
       }
     }
     .left{
+      width: 33%;
       overflow: hidden;
       height: 317px;
       img{
@@ -1584,6 +1647,15 @@ footer{
   }
   .content .main_event .video_floating_card .video_button{
     left: 38.7%;
+  }
+
+  .works{
+    .works_row{
+      
+      .work{
+        width: 100%;
+      }
+    }
   }
 }
 @media (max-width:991px){

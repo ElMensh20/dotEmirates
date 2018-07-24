@@ -29,6 +29,7 @@ $(".icon-next").on("click",function(){
 workIndex=2;
 workCounter=0;
 workWidth=$(".works .work_slider .slider_body .work").width();
+console.log(workWidth);
 worksliderSize=($(".works .work_slider .slider_body .work").length-1)*workWidth;
 $(".icon-left").on("click",function(){
     if( workCounter!=(workWidth)){
