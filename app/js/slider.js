@@ -1,7 +1,7 @@
 counter=0;
 width= $(".slider_item").width();
 size= ($(".slider_item").length-1); 
-index=0;
+index=1;
 //Final code *******************************
 $( document ).ready(function() {
     $(".works .work_slider .slider_body .work:nth-child(2)").addClass("active");

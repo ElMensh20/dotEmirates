@@ -5,13 +5,30 @@ $gray:#707070;
 $fadedgray:#70707033;
 $halffadedgray:#F5F5F5;
 @font-face {
-    font-family: Bahij_bold;
-    src: url(fonts/Bahij_TheSansArabic-Bold.ttf);
+    font-family: bahij_bold;
+    src: url("fonts/Bahij_TheSansArabic-SemiLight.ttf");
 }
+@font-face{
+    font-family: helveticaNeueLT75;
+    src: url("../fonts/HelveticaNeueLT.otf");
+}
+@font-face{
+    font-family:helveticaNeueLT;
+    src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
+@font-face{
+    font-family:helveticaNeueLTSky;
+    src: url("../fonts/HelveticaNeueW23forSKY-Reg.ttf");
+}
+
 *{
     padding:0;
     margin: 0;
     color:$gray;
+    font-family: helveticaNeueLT75;
+}
+body{
+    position: relative;
 }
 a{
     color:$gray;

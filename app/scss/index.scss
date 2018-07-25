@@ -160,26 +160,45 @@ header{
         color:$green;
       }
       .widget_header{
+        font-size: 20px;
         text-align: right;
         padding-bottom: 22px;
         border-bottom: 1px solid $fadedgray;
       }
       .widget_body{
-        .widget_row:not(:last-child){
-          border-bottom: 1px solid $fadedgray;
-          padding-bottom: 15px;
+        .widget_row{
+          display: flex;
+          &:not(:last-child){
+            border-bottom: 1px solid $fadedgray;
+          }
         }
 
+      }
+      .one{
+        width: 33%;
+        &:first-child{
+          text-align: left;
+        }
+        &:nth-child(2){
+          text-align: center;
+        }
+        &:last-child{
+          text-align: right;
+        }
       }
     }
     .widget_hero{
       padding: 27px 0;
       border-bottom: 1px solid $fadedgray;
-      div{
-        padding: 0 26px;
-        height: 89px;
+      .one{
         &:last-child{
-          padding: 0 18px;
+          text-align: center;
+        }
+      }
+      div{
+        height: 89px;
+        ul{
+          text-align: center;
 
         }
         li:first-of-type, li:last-of-type{
@@ -225,7 +244,7 @@ header{
       }
       .slider_hr{
         position: absolute;
-        bottom: 30px;
+        bottom: 45px;
         width: 90%;
         left: 5%;
       }
@@ -242,9 +261,17 @@ header{
   }
   .gas_price{
     .widget_body{
+      .one{
+        &:first-child{
+          padding-top: 3%;
+        }
+        &:nth-child(2){
+          padding-top: 3%;
+        }
+      }
       i{
         font-size: 40px;
-        margin-left: 85px;
+        text-align: right;
         &::before{
           margin: 0;
         }
@@ -252,13 +279,12 @@ header{
       span{
         font-size: 24px;
         color:$green;
-        margin-left: 86px;
+        text-align: center;
       }
       .widget_row{
+        display: flex;
         &>div{
-          height: 45px;
           margin-top: 6px;
-          text-align: right;
         }
       }
     }
@@ -266,6 +292,7 @@ header{
   .currency_converter{
     .widget_header{
       input{
+        margin-left: 2%;
         float: left;
         margin-top: 6px;
         width: 100px;
@@ -283,20 +310,21 @@ header{
       }
     }
     .widget_row{
-      span:nth-of-type(2){
-        margin-left: 155px;
-      }
-      img{
-        margin-left: 25px;
-      }
+      padding: 17px 0;
     }
   }
   .prayer_times{
     .widget_row{
-      padding-left: 20px;
+      .one{
+        &:first-child{
+          padding-top: 10px;
+        }
+        &:last-child{
+          padding-top: 7px;
+        }
+      }
       span{
         &:last-of-type{
-          margin-left: 67px;
           font-size: 20px;
         }
         &:first-of-type{
@@ -304,7 +332,6 @@ header{
         }
       }
       i{
-        margin-left: 65px;
         font-size: 35px;
       }
     }
@@ -322,12 +349,16 @@ header{
       .widget_row{
         padding: 29px 27px;
         &>span{
-          &:first-of-type{
-            margin-left:60px;
-          }
+          width: 33%;
+          text-align: right;
         }
-        i{
-          margin-left: 60px;
+        &>i{
+          width: 33%;
+          text-align: center;
+        }
+        &>div{
+          width: 33%;
+          text-align: left;
         }
       }
     }
@@ -378,11 +409,10 @@ header{
           padding: 10px 0;
           float: left;
           line-height: 1.5;
+          width: 33%;
+          text-align: center;
           ul{
             margin: 0;
-            li{
-              padding: 0 9px;
-            }
           }
           &:first-of-type{
             margin-right: 0;
@@ -458,28 +488,26 @@ header{
           div{
             float: right;
             padding:23px 0; 
-            &:not(:last-of-type){
-              margin-left: 50px;
+            width: 25%;
+            text-align: center;
+            &:first-child{
+              text-align: right;
+            } 
+            &:last-child{
+              text-align: left; 
             }
           }
         }
         .content_row{
           padding: 16px 0;
           font-size: 12px;
-          span{
-            & , div{
-              float: right;
-            }
-            &:first-of-type{
-              margin-left: 70px;
-            }
-          }
-          &> div{
-            transform: rotate(270deg);
-            width: 20px;
-          }
+          display: flex;
           &:not(:last-of-type){
             border-bottom: 1px solid $fadedgray;
+          }
+          .icon-up-stock{
+            font-size: 12px;
+
           }
         }
       }
@@ -503,7 +531,7 @@ nav{
         color:$green;
       }
       &:not(:nth-of-type(7)){
-        margin-left: 100px
+        margin-left: 99px;
       }
     }
   }
@@ -594,6 +622,7 @@ nav{
           border-bottom:1px solid $fadedgray;
 
           .title{
+            font-weight: 600;
             color:$green;
             font-size: 24px;
             text-align: right;
@@ -713,7 +742,8 @@ nav{
     text-align: center;
     padding-bottom: 0;
     border: 0;
-    font-family: "Bahij_bold";
+    font-family: Bahij_bold;
+    
     ul{
       li{
         text-align: center;
@@ -1543,7 +1573,7 @@ footer{
       }
     }
   }
-}
+} 
 @media (max-width:1300px){
   .content .myrow .custom .mycard_img {
     height: 432px;
@@ -1561,15 +1591,14 @@ footer{
     display: block;
   }
   .mobile_menu{
-    position: fixed;
-    top: 187px;
+    position: absolute;
+    background-color: #fffffffa;
+    z-index: 9999;
     left: 0;
     right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 9999;
-    overflow: auto;
+    top: 187px;
     .widget_icons{
+      position: relative;
       .widget_icon{
         text-align: right;
         padding-right: 12%;
@@ -1597,7 +1626,6 @@ footer{
         .widget_content{
           border: 0;
           background: none;
-          width: 610px;
         }
       }
     }
@@ -1619,6 +1647,23 @@ footer{
       a{
         &:not(:first-child){
           margin-left: 16px;
+        }
+      }
+    }
+    .menu_body{
+      .widgets{
+        border-bottom:1px solid $fadedgray;
+        .one_item{
+          float: none;
+          .widget_content{
+            position: unset;
+            z-index: 0;
+            height: unset;
+            max-height: unset;
+            margin: auto;
+            width: unset;
+            max-width: 700px;
+          }
         }
       }
     }

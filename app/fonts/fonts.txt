@@ -1,9 +1,0 @@
-Bahij TheSansArabic-Bold
-
-Bahij TheSansArabic-Plain
-
-Helvetica Neue W23 for SKY-Regular
-
-HelveticaNeueLT W20 55 Roman-Regular
-
-HelveticaNeueLT W20 75 Bold-Regular
