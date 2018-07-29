@@ -29,5 +29,5 @@ $('.back').click(function() {
 });
 $(".menu_button").click(function(){
     $(this).toggleClass("button_opened");
-    $(".mobile_menu").toggle();
+    $(".mobile_menu").slideToggle(550);
 });

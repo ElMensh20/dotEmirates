@@ -1,7 +1,8 @@
 counter=0;
 width= $(".slider_item").width();
-size= ($(".slider_item").length-1); 
-index=1;
+size= ($(".slider_item").length-1);
+console.log(size*width,"/",width);
+var index=1;
 //Final code *******************************
 $( document ).ready(function() {
     $(".works .work_slider .slider_body .work:nth-child(2)").addClass("active");
@@ -9,7 +10,7 @@ $( document ).ready(function() {
 });
 $(".icon-prev").on("click",function(){
     if( counter!=0){
-        $(".slider_body .slider_item:nth-child("+index+")").removeClass("focused");
+        $(".slider_body .slider_item").removeClass("focused");
         index--;
         $(".slider_body .slider_item:nth-child("+index+")").addClass("focused");
         counter+=width;
@@ -19,7 +20,7 @@ $(".icon-prev").on("click",function(){
 $(".icon-next").on("click",function(){
     if(counter!=-size){
         counter-=width;
-        $(".slider_body .slider_item:nth-child("+index+")").removeClass("focused");
+        $(".slider_body .slider_item").removeClass("focused");
         index++;
         $(".slider_body .slider_item:nth-child("+index+")").addClass("focused");
         $(".slider_body").css("transform","translate3d("+counter+"px, 0px, 0px)");
@@ -29,7 +30,6 @@ $(".icon-next").on("click",function(){
 workIndex=2;
 workCounter=0;
 workWidth=$(".works .work_slider .slider_body .work").width();
-console.log(workWidth);
 worksliderSize=($(".works .work_slider .slider_body .work").length-1)*workWidth;
 $(".icon-left").on("click",function(){
     if( workCounter!=(workWidth)){

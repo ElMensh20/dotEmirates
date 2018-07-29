@@ -1323,6 +1323,60 @@ footer{
   }
 }
 
+.loading{
+  background: $white;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  .content{
+    height: 100%;
+    display: flex;
+    background-image: url("../images/Intersection 1.png");
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    .item{
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      svg{
+        position: absolute;
+        top: -15px;
+        left: 33px;
+        circle{
+          stroke-dasharray: 502;
+          -webkit-animation: loading 5s infinite; /* Safari 4.0 - 8.0 */
+          animation: loading 5s infinite;
+          animation-timing-function: linear;
+          -webkit-animation-timing-function: linear;
+        }
+      }
+    }
+  }
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes loading {
+from {top: 0px;}
+to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes loading {
+0%{
+  stroke-dashoffset: 502;
+}
+50%{
+  stroke-dashoffset: 0;
+}
+100%{
+  stroke-dashoffset: -502;
+}
+}
 @media (min-width: 320px){
   .content{
     .myrow{
