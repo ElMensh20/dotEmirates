@@ -227,7 +227,7 @@ header{
         display: flex;
         padding:15px 0 0 15px;
         transform:translate3d(0px,0px, 0px);
-        transition: 0.5s;
+        transition: 2s;
         .slider_item{
           opacity: 0.3;
           width: 195px;
@@ -1098,6 +1098,7 @@ footer{
       position: absolute;
       display: flex;
       transform:translate3d(0px,0px, 0px);
+      transition: 2s;
       .work{
         padding-top: 60px;
         &:not(:last-of-type){
@@ -1140,29 +1141,62 @@ footer{
   }
 }
 .his_words{
-  img{
+  position: relative;
+  h3{
+    text-align: center;
+    margin: 88px;
+    font-size: 30px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:"";
+      background: $green;
+      width: 37px;
+      height: 3px;
+      bottom: -20px;
+      right: 49%;
+    }
+  }
+  .words_img{
     width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img{
+      width: 415px;
+
+    }
   }
   .inner{
     background-color: $gray;
     background-image: url("../images/circles_background.png");
-    text-align: left;
+    text-align: right;
     .words_slider{
-      text-align: left;
+      height: 442px;
+      text-align: center;
+      position: relative;
       i{
-        color: $white; 
+        color: $white !important; 
       } 
       .icon-two-up{
         font-size: 36px;
       }
       .slider_body{
         max-width: 603px;
+        position: absolute;
+        display: flex;
+        top:15%;
+        right: 10%;
+        overflow: hidden;
         .word{
+          z-index: 9999;
           p{
+            word-wrap: break-word;
             color: $white;
+            width: 608px;
           }
           font-size: 36px;
-          max-width: 603px;
+          max-width: 750px;
           text-align: center;
         }
       }
@@ -1170,7 +1204,12 @@ footer{
         font-size: 24px;
       }
       .slider_footer{
-        font-size: 20px;
+        font-size: 30px;
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        width: 603px;
+        text-align: center;
       }
     }
   }
@@ -1322,7 +1361,6 @@ footer{
     }
   }
 }
-
 .loading{
   background: $white;
   position: fixed;

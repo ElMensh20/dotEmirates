@@ -42,6 +42,8 @@
 .icon-left:before { content: '\e828'; } /* '' */
 .icon-intersection-2:before { content: '\e829'; } /* '' */
 .icon-up-stock:before { content: '\e82a'; } /* '' */
+.icon-right-small:before { content: '\e82b'; } /* '' */
+.icon-left-small:before { content: '\e82c'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-win8:before { content: '\f325'; } /* '' */
 .icon-newspaper:before { content: '\f4f0'; } /* '' */

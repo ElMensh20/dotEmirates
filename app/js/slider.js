@@ -29,8 +29,9 @@ $(".icon-next").on("click",function(){
 
 workIndex=2;
 workCounter=0;
-workWidth=$(".works .work_slider .slider_body .work").width();
+workWidth=$(".works .work_slider .slider_body .work").outerWidth();
 worksliderSize=($(".works .work_slider .slider_body .work").length-1)*workWidth;
+console.log(workWidth,"/",worksliderSize);
 $(".icon-left").on("click",function(){
     if( workCounter!=(workWidth)){
         $(".works .work_slider .slider_body .work").removeClass("active");
@@ -53,17 +54,19 @@ wordIndex=1;
 wordCounter=0;
 wordWidth=$(".his_words .inner .words_slider .slider_body .word").width();
 wordsliderSize=($(".his_words .inner .words_slider .slider_body .word").length-1)*wordWidth;
-$(".his_words .inner .slider_footer .icon-left").on("click",function(){
+console.log(wordWidth,"/",wordsliderSize);
+
+$(".icon-left-small").on("click",function(){
     if( wordCounter!=0){
         wordIndex--;
         wordCounter+=wordWidth;
         $(".his_words .inner .words_slider .slider_body").css("transform","translate3d("+wordCounter+"px, 0px, 0px)");
     }
 });
-$(".his_words .inner .slider_footer .icon-right").on("click",function(){
+$(".icon-right-small").on("click",function(){
     if(wordCounter!=-(wordsliderSize)){
         wordCounter-=wordWidth;
         wordIndex++;
-        $(".his_words .inner .words_slider .slider_body").css("transform","translate3d("+wordCounter+"px, 0px, 0px)");  
+        $(".his_words .inner .words_slider .slider_body").css("transform","translate3d("+wordCounter+"px, 0px, 0px)");
     } 
 });
