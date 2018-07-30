@@ -85,6 +85,9 @@ ul {
 .over_flow {
   overflow: hidden; }
 
+.padLeft20 {
+  padding-left: 20px; }
+
 @media (min-width: 1300px) {
   .container {
     padding: 0;

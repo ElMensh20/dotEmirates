@@ -4,6 +4,14 @@ $(".icon-search").click(function(){
         $(".component:not(.search)").toggle();
     }
 });
+$(".local").click(function(){
+    $("body").toggleClass("en");
+    if($(".local").text()=="EN"){
+        $(".local").html("AR");
+    }else{
+        $(".local").html("EN");
+    }
+});
 $(".one_widget").hover(function(){
     $(this).toggleClass('opened');
 });

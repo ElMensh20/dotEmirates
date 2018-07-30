@@ -95,6 +95,7 @@ header{
                 z-index: 9999;
                 position: absolute;
                 left: 0;
+                right: 0;
                 top: 348px;
                 background: $green;
                 text-align: center;
@@ -108,6 +109,7 @@ header{
                 background: $white;
                 position: absolute;
                 left: 0;
+                right: 0;
                 top: 398px;
                 padding: 21px 43px;
                 border-bottom: 1px solid $fadedgray;
@@ -219,6 +221,7 @@ header{
       overflow: hidden;
       background: $green;
       height: 150px;
+      
       ul{
         margin: 15px -10px 0 0 ;
       }
@@ -1399,21 +1402,28 @@ footer{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes loading {
-from {top: 0px;}
-to {top: 200px;}
+  0%{
+    stroke-dashoffset: 502;
+  }
+  50%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: -502;
+  }
 }
 
 /* Standard syntax */
 @keyframes loading {
-0%{
-  stroke-dashoffset: 502;
-}
-50%{
-  stroke-dashoffset: 0;
-}
-100%{
-  stroke-dashoffset: -502;
-}
+  0%{
+    stroke-dashoffset: 502;
+  }
+  50%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: -502;
+  }
 }
 @media (min-width: 320px){
   .content{
