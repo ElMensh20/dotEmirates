@@ -210,13 +210,12 @@ header {
     background-color: #fff;
     z-index: 2;
     position: absolute;
+    visibility: hidden;
     right: 0;
     top: 100%;
     padding: 20px;
     width: 385px;
     max-height: 90vh;
-    height: 735px;
-    overflow-y: overlay;
     border: 1px solid #f7f7f73d; }
     .widgets .one_widget .widget_content i {
       color: #AEB756; }
@@ -271,11 +270,15 @@ header {
       .widgets .one_widget .widget_slider .slider_body .slider_item {
         opacity: 0.3;
         width: 195px;
-        height: 66px; }
+        height: 66px;
+        display: none; }
         .widgets .one_widget .widget_slider .slider_body .slider_item i {
-          color: #fff !important; }
-        .widgets .one_widget .widget_slider .slider_body .slider_item div li {
-          color: #fff; }
+          color: #fff !important;
+          display: inline-block; }
+        .widgets .one_widget .widget_slider .slider_body .slider_item div {
+          display: inline-block; }
+          .widgets .one_widget .widget_slider .slider_body .slider_item div li {
+            color: #fff; }
     .widgets .one_widget .widget_slider .slider_hr {
       position: absolute;
       bottom: 45px;
@@ -472,7 +475,10 @@ header {
       font-size: 12px; }
 
 .widgets .opened .widget_content {
-  display: block; }
+  visibility: visible;
+  overflow-y: overlay; }
+  .widgets .opened .widget_content .widget_slider .slider_item {
+    display: block; }
 
 nav .container {
   height: 65px; }

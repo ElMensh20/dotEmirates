@@ -150,13 +150,12 @@ header{
       background-color: $white;
       z-index: 2;
       position: absolute;
+      visibility: hidden;
       right: 0;
       top: 100%;
       padding: 20px;
       width: 385px;
       max-height: 90vh;
-      height: 735px;
-      overflow-y: overlay;
       border: 1px solid #f7f7f73d;
       i{
         color:$green;
@@ -235,10 +234,13 @@ header{
           opacity: 0.3;
           width: 195px;
           height: 66px;
+          display: none;
           i{
             color:$white !important;
+            display: inline-block;
           }
           div{
+            display: inline-block;
             li{
               color:$white;
             }
@@ -518,7 +520,13 @@ header{
   }
   .opened{
     .widget_content{
-      display: block;
+      visibility: visible;
+      overflow-y: overlay;
+      .widget_slider{
+        .slider_item{
+          display: block;
+        }
+      }
     }
   }
 }
