@@ -271,6 +271,7 @@ header {
         opacity: 0.3;
         width: 195px;
         height: 66px;
+        text-align: center;
         display: none; }
         .widgets .one_widget .widget_slider .slider_body .slider_item i {
           color: #fff !important;
@@ -1329,6 +1330,8 @@ footer {
     left: 0;
     right: 0;
     top: 187px; }
+    .mobile_menu .slider_item {
+      display: block; }
     .mobile_menu .widget_icons {
       position: relative; }
       .mobile_menu .widget_icons .widget_icon {
@@ -1351,7 +1354,8 @@ footer {
         color: #000; }
     .mobile_menu .widgets .one_widget .widget_content {
       border: 0;
-      background: none; }
+      background: none;
+      visibility: visible; }
     .mobile_menu .page_tab {
       text-align: right;
       padding: 30px 5%;

@@ -33,7 +33,11 @@ $(".widget_icon").click(function(){
       $('.one_item .widget_content').eq(index).slideDown(300);
     }
     if($(".weather .widget_slider").css('display') !== 'none'){
-        initWeatherSlider();
+        counter=0;
+        width= $(".wheather_slider").width();
+        size= (($(".wheather_slider .slider_item").length)-1)*width;
+        console.log(size,"/",width);
+        $(".wheather_slider .slider_body .slider_item").width(width);
     }
 
     

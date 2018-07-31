@@ -234,6 +234,7 @@ header{
           opacity: 0.3;
           width: 195px;
           height: 66px;
+          text-align: center;
           display: none;
           i{
             color:$white !important;
@@ -1712,6 +1713,9 @@ footer{
     left: 0;
     right: 0;
     top: 187px;
+    .slider_item{
+      display: block;
+    }
     .widget_icons{
       position: relative;
       .widget_icon{
@@ -1741,6 +1745,7 @@ footer{
         .widget_content{
           border: 0;
           background: none;
+          visibility: visible;
         }
       }
     }
